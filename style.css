@@ -16,7 +16,7 @@ body {
 
 .container {
     width: 480px;
-    height: 630px;
+    height: 620px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -52,6 +52,7 @@ input {
     transition: all 0.3s;
 }
 
+
 input:valid {
     border: 1px solid green;
 }
@@ -83,3 +84,20 @@ button:focus {
     outline: none;
 }
 
+#phone {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="30"><text x="3" y="21.5" style="font: 16px Arial;">+374:</text></svg>') no-repeat;
+  border: 1px solid #555;
+  box-sizing: border-box;
+  font: 16px "Arial";
+  height: 35px;
+  padding-left: 50px;
+  width: 433px;
+}
+
+#phone:valid {
+    border: 1px solid green;
+}
+
+#phone:invalid {
+    border: 1px solid red;
+}
